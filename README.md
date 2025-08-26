@@ -32,5 +32,7 @@ para ejecutar los programas puede copiarlos o mejor puede hacer esto:
 1. Instalar Dart: [https://dart.dev/get-dart](https://dart.dev/get-dart)  
 2. Clonar este repositorio:  
    en la concola bash o en la terminal de visual puede clonar mi repositorio para q pueda verlos con los comandos de abajo
-   git clone https://github.com/villno55/ejerciciosDart?authuser=0
-   cd ejerciciosDart
+   
+     git clone https://github.com/villno55/ejerciciosDart?authuser=0
+   
+    cd ejerciciosDart
