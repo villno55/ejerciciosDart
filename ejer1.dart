@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  print("=== Calculadora de Propinas ===");
+  print(" Calculadora de Propinas ");
 
   stdout.write("Ingrese el valor del pedido: ");
   double pedido = double.parse(stdin.readLineSync()!);
