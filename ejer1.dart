@@ -3,21 +3,21 @@ import 'dart:io';
 void main() {
   print(" Calculadora de Propinas ");
 
-  stdout.write("Ingrese el valor del pedido: ");
+  stdout.write("Ingresa el valor del pedido: ");
   double pedido = double.parse(stdin.readLineSync()!);
 
-  print("Seleccione el tipo de servicio: ");
+  print("Selecciona el tipo de servicio: ");
   print("1. Comida\n2. Farmacia\n3. Supermercado");
   int tipo = int.parse(stdin.readLineSync()!);
 
-  print("Calidad del servicio: ");
+  print("Que te parecio el servicio: ");
   print("1. Excelente (20%)\n2. Bueno (15%)\n3. Regular (10%)");
   int calidad = int.parse(stdin.readLineSync()!);
 
   double porcentaje = 0;
   String mensaje = "";
 
-  switch (calidad) {
+  switch (calidad) { // me permite tener mas opciones, segun lo q elija el usuario se va a mostar un mensaje
     case 1:
       porcentaje = 0.20;
       mensaje = "muy buen servicio ";
@@ -28,7 +28,7 @@ void main() {
       break;
     case 3:
       porcentaje = 0.10;
-      mensaje = "Servicio regular ";
+      mensaje = "Servicio regula, esperamos mejorar cada vez mas  ";
       break;
     default:
       print("Opción inválida.");
@@ -39,6 +39,6 @@ void main() {
   double total = pedido + propina;
 
   print("Propina sugerida: \$${propina.toStringAsFixed(2)}");
-  print("Total a pagar: \$${total.toStringAsFixed(2)}");
+  print("cuenta total: \$${total.toStringAsFixed(2)}");
   print(mensaje);
 }
