@@ -22,8 +22,8 @@ void main() {
   print("Código QR generado (texto): $qr");
 
   if (pass.length < 8 && tipo != 3) {
-    print(" Advertencia: la contraseña es poco segura");
+    print(" Advertencia: la contraseña no es tan segura");
   }
 
-  print("Escanee este código en su dispositivo para conectarse automáticamente.");
+  print("Escanea este código en tu dispositivo para q te conectes automáticamente.");
 }
