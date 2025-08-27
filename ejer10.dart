@@ -1,9 +1,9 @@
 class Resena {
   String usuario;
-  int estrellas; // 1-5
+  int estrellas; // las reemolazo por numeros del 1-5
   String comentario;
   DateTime fecha;
-  int utilidad; // votos útiles
+  int utilidad; 
 
   Resena(this.usuario, this.estrellas, this.comentario)
       : fecha = DateTime.now(),
@@ -15,30 +15,27 @@ class Resena {
 
   @override
   String toString() =>
-      "$usuario: ${"" * estrellas} - $comentario (Utilidad: $utilidad)";
+      "$usuario: $estrellas/5 - $comentario (Utilidad: $utilidad)";
 }
 
 void main() {
-  List<Resena> reseñas = [];
-  // la declaro resena ya q no admite la ñ,  
-  reseñas.add(Resena("Ana", 5, "Excelente app!"));
-  reseñas.add(Resena("Luis", 3, "Regular"));
-  reseñas.add(Resena("Marta", 4, "Muy buena"));
+  List<Resena> resennas = [];
 
-  reseñas[0].votarUtil();
-  reseñas[0].votarUtil();
+  resennas.add(Resena("Ana", 5, "Excelente app!"));
+  resennas.add(Resena("Luis", 3, "Regular"));
+  resennas.add(Resena("Marta", 4, "Muy buena"));
+
+  resennas[0].votarUtil();
+  resennas[0].votarUtil();
 
   double promedio =
-      reseñas.fold(0, (s, r) => s + r.estrellas) / reseñas.length;
+      resennas.fold(0, (s, r) => s + r.estrellas) / resennas.length;
 
-  print("Reseñas ");
-  reseñas.forEach(print);
-  print("Promedio: ${promedio.toStringAsFixed(1)} estrellas");
+  print("Reseñas");
+  resennas.forEach(print);
+  print("Promedio: ${promedio.toStringAsFixed(1)}/5 estrellas");
 
-  print("Las más útiles: ");
-  reseñas.sort((a, b) => b.utilidad.compareTo(a.utilidad));
-  reseñas.forEach(print);
+  print("Las más útiles:");
+  resennas.sort((a, b) => b.utilidad.compareTo(a.utilidad));
+  resennas.forEach(print);
 }
-
-
-
