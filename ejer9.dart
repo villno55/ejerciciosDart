@@ -1,8 +1,8 @@
 class Archivo {
-  String nombre;
-  double tamano; // MB
   String tipo;
+  String nombre; 
   DateTime fecha;
+  double tamano;
   String ruta;
 
   Archivo(this.nombre, this.tamano, this.tipo, this.ruta)
