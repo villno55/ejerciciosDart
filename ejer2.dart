@@ -36,10 +36,10 @@ void main() {
       break;
   }
 
-  print("Nivel de seguridad: $nivel");
-  if (!longitud) print(" Debe tener al menos 8 caracteres");
-  if (!tieneMayus) print("Agrega mayúsculas");
-  if (!tieneMinus) print(" Agrega minúsculas");
-  if (!tieneNum) print(" Agrega números");
+  print("estado de seguridad: $nivel");
+  if (!tieneMinus) print("inclui minúsculas en tu contraseña");
+  if (!tieneMayus) print("inclui mayúsculas en tu contraseña");
+  if (!longitud) print(" ponela como mínimo de 8 caracteres");
   if (!tieneEsp) print("Agrega caracteres especiales");
+  if (!tieneNum) print(" Agrega números");
 }
