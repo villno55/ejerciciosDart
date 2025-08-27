@@ -10,7 +10,7 @@ class Evento {
 
   Evento(this.titulo, this.categoria);
 
-  void registrar(Participante p) {
+  void registrar(Participante p) { //no me retorna
     inscritos.add(p);
     print("${p.nombre} se registró en $titulo");
   }
@@ -30,8 +30,8 @@ void main() {
   var org = Organizador("Comité Cultural");
   var evento = Evento("Festival de Música", "Cultural");
 
-  var p1 = Participante("Laura");
-  var p2 = Participante("Pedro");
+  var p1 = Participante("pacho");
+  var p2 = Participante("peña");
 
   evento.registrar(p1);
   evento.registrar(p2);
